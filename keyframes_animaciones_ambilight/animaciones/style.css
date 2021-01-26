@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+}
+
+/* Imagen que rota infinitamente */
+.imagenRotar {
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: animacionRotar;
+}
+@keyframes animacionRotar {
+  from { transform: rotateY(0deg); }
+  50% { transform: rotateY(180deg); }
+  to { transform: rotateY(0deg); }
+}
+
+/* Texto que se desplaza desde la derecha hasta su posición base en la izquierda al recargar la página */
+.containerTexto {
+  position: absolute;
+  top: 15%;
+  animation: linear 1;
+  animation-name: animacionDeslizar;
+  animation-duration: 5s;
+}
+@keyframes animacionDeslizar {
+  0% { left: 83%;}
+	100%{ left : 0%;}
+}
+
+/* Imagen que modifica su tamaño y posición durante 15s */
+.doge {
+  position: absolute;
+  top: 20%;
+  animation: linear 1;
+  animation-name: animacionDoge;
+  animation-duration: 15s;
+}
+@keyframes animacionDoge {
+  0% { 
+    left: 100%;
+    width: 100px;
+  }
+  49% {
+    top: 40%;
+  }
+  50% {
+    width: 200px;
+    top: 0%;
+  }
+  51% {
+    top: 40%;
+  }
+  100% { 
+    left: 0%;
+    width: 100px;
+  }
+}
