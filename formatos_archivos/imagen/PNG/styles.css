@@ -1,0 +1,31 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1200px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  row-gap: 1em;
+  column-gap: 1em;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.gallery {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}

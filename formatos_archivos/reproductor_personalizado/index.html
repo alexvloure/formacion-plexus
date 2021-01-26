@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="reproductor.js"></script>
+  <title>Reproductor de vídeo personalizado</title>
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <video id="video" width="1280" poster="img/poster.jpg">
+        <source src="media/video.mp4" type="video/mp4">
+      </video>
+      <div class="controls">
+        <span id="playpause" title="PlayPause" onclick="playpause_video()"><img width="25" id="imgPlayPause" src="img/play.png"></span> 
+        <span id="stop" title="Stop" onclick="stop_video()"><img width="25" src="img/stop.png"></span> 
+        <span id="mute" title="Mute" onclick="mute_toggle()"><img width="25" id="imgMuteUnmute" src="img/unmuted.png"></span> 
+        <input id="vol-slider" type="range" min="0" max="100" step="1" value="100" onchange="volume_slider(this.value)"></input>
+        <span id="backward" title="Backward" onclick="backward_video()"><img width="25" src="img/backward.png"></span> 
+        <span id="forward" title="Forward" onclick="forward_video()"><img width="25" src="img/forward.png"></span> 
+        <select name="format" id="format" onchange="selected_format()">
+          <option value="mp4" selected>MP4</option>
+          <option value="webm">WEBM</option>
+        </select>
+        <span id="fullscreen" title="Fullscreen" onclick="fullscreen_video()"><img width="25" src="img/fullscreen.png"></span> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>
