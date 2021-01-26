@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+  background-color: black;
+}
+
+h1 {
+  color: rgb(255, 248, 235);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 750px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* .container > div {
+  height: 250px;
+} */
+
+img{
+  width: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropZone {
+  background-color: rgb(105, 105, 105);
+}

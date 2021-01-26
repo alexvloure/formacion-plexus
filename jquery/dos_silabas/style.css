@@ -1,0 +1,45 @@
+body {
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 750px;
+  margin: auto;
+  display: grid;
+  font-size: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+}
+.container span {
+  height: 25px;
+  width: 35px;
+  background-color: bisque;
+}
+.container2 {
+  font-size: 1.5em;
+  width: 200px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.container2 div {
+  width: 100px;
+}
+.container-syllabe {
+  cursor: pointer;
+}
+.drop {
+  background-color: #CCC;
+  height: 25px;
+}
+.dropZone {
+  background-color: rgb(105, 105, 105);
+}
+.dropZoneHover{
+  background-color:rgb(233, 233, 233);
+}
