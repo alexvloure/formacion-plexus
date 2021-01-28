@@ -17,3 +17,9 @@ Diversos ejercicios utilizando JQuery.
 * Dos sílabas: un pequeño juego en el que tendremos que juntar unas sílabas dentro de una caja con otras en una columna para formar palabras de dos sílabas.
 * Puzzle: en este caso se trata de un pequeño juego en el que usamos el método sortable() para ordenar las piezas de un puzzle. Cuando conseguimos poner las piezas en su lugar correcto, nos avisa de que hemos logrado completarlo con éxito.
 * Fin de módulo: por último, este ejercicio se trata de una pequeña galería de imágenes hecha a mano con JQuery sin usar galerías prediseñadas. También cuenta con un menú con sus correspondientes submenús desplegables. 
+## Tareas de despliegue
+### Directorio -> _tareas_despliegue_
+Conjunto de tareas instalando y configurando dos servidores, uno web (Apache) y otro de aplicaciones (Tomcat).
+* install_xampp_lamp: explicación sencilla y detallada sobre la instalación de XAMPP así como de LAMP.
+* conf_apache_tomcat: detallada guía sobre como realizar una configuración de Apache e instalar Tomcat y realizar una configuración (menos extensa que la de apache).
+* tomcat: cómo realizar una configuración más en profundidad del servidor de aplicaciones Tomcat.
